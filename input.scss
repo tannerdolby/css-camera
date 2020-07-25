@@ -1,0 +1,671 @@
+$pg-background: #F8C471;
+$camera-bottom-shadow: 0px 11px 14px -4px rgba(0,0,0,0.75);
+
+$tb-stripes: linear-gradient(to bottom, #ccc 20px, #ccc 20px, transparent 22px, transparent 257px, #ccc 258px);
+
+$tb-stripes-med: linear-gradient(to bottom, #ccc 20px, #ccc 20px, transparent 22px, transparent 250px, #ccc 250px);
+
+$tb-stripes-sm: linear-gradient(to bottom, #ccc 20px, #ccc 20px, transparent 22px, transparent 225px, #ccc 225px);
+
+$side-shadows: linear-gradient(to right, #222 0px, transparent 100px, transparent 400px, transparent 400px, #222 100%);
+
+$side-shadows-med: linear-gradient(to right, #222 0px, transparent 100px, transparent 330px, transparent 330px, #222 100%);
+
+$side-shadows-sm: linear-gradient(to right, #222 0px, transparent 120px, transparent 120px, transparent 190px, #222 100%);
+
+$snapshot: 155px -15px 0 15px #444,
+                155px -20px 0 15px #fff;
+
+$snapshot-med: 120px -17px 0 12px #444,
+                120px -24px 0 12px #fff;
+
+$snapshot-sm: 107px -13px 0px 11px #444,
+                107px -13px 0px 11px #444,
+                105px -22px 0 9px #fff,
+                109px -22px 0 9px #fff;
+
+$snapshot-xs: 86px -13px 0px 10px #444,
+                86.5px -13px 0px 10px #444,
+                85.5px -21px 0 9px #fff,
+                87.2px -21px 0 9px #fff;
+
+$camera-block: 150px 0px 0 20px #ccc,
+                155px 0px 0 20px #ccc,
+                160px 0px 0 20px #ccc,
+                165px 0px 0 20px #ccc,
+                170px 0px 0 20px #ccc,
+                290px 45px 0 100px #ccc,
+                370px -18px 0px 37px #ccc;
+
+$camera-block-mobile: 120px 0px 0 20px #ccc,
+                155px 0px 0 20px #ccc,
+                150px 0px 0 20px #ccc,
+                155px 0px 0 20px #ccc,
+                150px 0px 0 20px #ccc,
+                240px 55px 0 100px #ccc,
+                320px -12px 0px 33px #ccc;
+
+$camera-block-mobile-s: 90px -7px 0 7px #ccc,
+                95px -7px 0 7px #ccc,
+                105px -7px 0 7px #ccc,
+                115px -7px 0 7px #ccc,
+                125px -7px 0 7px #ccc,
+                284px 11px 0 11px #ccc,
+                205px 25px 0 75px #ccc;
+
+$camera-block-mobile-xs: 78px -7px 0 7px #ccc,
+                90px -7px 0 7px #ccc,
+                95px -7px 0 7px #ccc,
+                105px -7px 0 7px #ccc,
+                115px -7px 0 7px #ccc,
+                240px 10px 0 11px #ccc,
+                173px 16.5px 0 65px #ccc;
+
+$eye-spot-xs:  185px -15px 0px 16px #333,
+                205px -15px 0px 16px #333,
+                
+                183px -15px 0px 18.5px #fff,
+                206px -15px 0px 18.5px #fff,
+  
+                181px -17px 2px 20px #333,
+                190px -17px 2px 20px #333,
+                205px -17px 2px 20px #333;
+
+$eye-spot-sm:  215px -15px 0px 16px #333,
+                235px -15px 0px 16px #333,
+                
+                214px -15px 0px 19.5px #fff,
+                236px -15px 0px 19.5px #fff,
+  
+                211px -17px 2px 20px #333,
+                215px -17px 2px 20px #333,
+                234px -17.5px 2px 20px #333;
+
+$eye-spot-mobile:  251px -15px 0px 18px #333,
+                270px -15px 0px 18px #333,
+                250px -15px 0px 21.5px #fff,
+                271px -15px 0px 21.5px #fff,
+                
+                247px -17px 2px 22px #333,
+                275px -22px 2px 17px #333;
+
+$eye-spot:  301px -25px 0px 18px #333,
+                329px -25px 0px 18px #333,
+                330px -25px 0px 18px #333,
+  
+                300px -25px 0px 21.5px #fff,
+                331px -25px 0px 21.5px #fff,
+                
+                297px -28px 2px 22px #333,
+                330px -28px 2px 22px #333,
+                330px -25px 2px 17px #333;
+
+$left-clarify:  25px -5px 0 5px #444,
+                30px -5px 0 5px #444,
+                35px -5px 0 5px #444,
+                40px -5px 0 5px #444,
+                45px -5px 0 5px #444,
+                50px -5px 0 5px #444,
+                55px -5px 0 5px #444,
+                60px -5px 0 5px #444,
+                65px -5px 0 5px #444,
+                70px -5px 0 5px #444,
+                75px -5px 0 5px #444;
+
+$left-clarify-sm:  25px -5px 0 5px #444,
+                30px -5px 0 5px #444,
+                35px -5px 0 5px #444,
+                40px -5px 0 5px #444,
+                45px -5px 0 5px #444,
+                55px -5px 0 5px #444;
+
+$left-clarify-xsm:  15px -5px 0 5px #444,
+                25px -5px 0 5px #444,
+                35px -5px 0 5px #444,
+                45px -5px 0 5px #444;
+
+$left-focus: 50px -25px 2px 18px #888,
+                38px -25px 2px 18px #999,
+                30px -25px 2px 18px #666,
+                60px -25px 2px 18px #888,
+                70px -25px 2px 18px #888;
+
+$left-focus-sm: 50px -25px 2px 18px #888,
+                40px -25px 2px 18px #999,
+                30px -25px 2px 18px #666,
+                40px -25px 2px 18px #888,
+                48px -25px 2px 18px #888;
+
+$left-focus-xsm: 35px -25px 2px 16px #888,
+                28px -25px 2px 16px #999,
+                18px -25px 2px 16px #666,
+                25px -25px 2px 16px #888,
+                40px -25px 2px 16px #888;
+
+$right-top-floor: 445px -4px 0 5px #444,
+                450px -4px 0 5px #444,
+                455px -4px 0 5px #444,
+                460px -4px 0 5px #444,
+                465px -4px 0 5px #444,
+                470px -4px 0 5px #444,
+                475px -4px 0 5px #444; 
+
+$right-top-floor-mobile: 375px -4px 0 5px #444,
+                380px -4px 0 5px #444,
+                385px -4px 0 5px #444,
+                390px -4px 0 5px #444,
+                395px -4px 0 5px #444,
+                400px -4px 0 5px #444,
+                405px -4px 0 5px #444; 
+
+$right-top-floor-sm: 325px -4px 0 5px #444,
+                330px -4px 0 5px #444,
+                335px -4px 0 5px #444,
+                342px -4px 0 5px #444; 
+
+$right-top-floor-xsm: 275px -4px 0 5px #444,
+                280px -4px 0 5px #444,
+                285px -4px 0 5px #444,
+                290px -4px 0 5px #444; 
+
+$right-top-btn:  453px -18px 1px 10px #ccc,
+                455px -18px 1px 10px #ccc,
+                460px -18px 1px 10px #ccc,
+                465px -18px 1px 10px #ccc,
+                470px -18px 1px 10px #ccc,
+                475px -18px 1px 10px #ccc,
+      
+                443px -18px 2px 10px #888,
+                450px -18px 1.5px 10px #888,
+                455px -18px 1.5px 10px #888,
+                460px -18px 1.5px 10px #888;
+
+$right-top-btn-mobile:  390px -18px 1px 10px #ccc,
+                395px -18px 1px 10px #ccc,
+                400px -18px 1px 10px #ccc,
+                405px -18px 1px 10px #ccc,
+      
+                375px -18px 2px 10px #888,
+                385px -18px 1.5px 10px #888,
+                400px -18px 1.5px 10px #888,
+                405px -18px 1.5px 10px #888;
+
+$right-top-btn-sm:  330px -18px 1px 10px #ccc,
+                340px -18px 1px 10px #ccc,
+                345px -18px 1px 10px #ccc,
+
+                320px -18px 2px 10px #888,
+                325px -18px 1.5px 10px #888,
+                330px -18px 1.5px 10px #888,
+                335px -18px 1.5px 10px #888;
+
+$right-top-btn-xsm:  280px -18px 1px 10px #ccc,
+                285px -18px 1px 10px #ccc,
+                290px -18px 1px 10px #ccc,
+
+                273px -18px 2px 10px #888,
+                278px -18px 1.5px 10px #888,
+                283px -18px 1.5px 10px #888,
+                288px -18px 1.5px 10px #888;
+
+$camera-lens: 1.5px -2px 1px 1px #fff,
+                -1px -3px 13px #555,
+                0 0 3px 25px #c2c2c2,
+                0 -2px 1px 26px #fff,
+                -2px -5px 3px 29px #666,
+                0 0 3px 28px black;
+
+
+$camera-lens-small: -145px -91px 2px -77.5px #aaa,
+                -145px -90px 2px -73px #888,
+                -145px -91px 1px -63px #ccc,
+                -145px -90px 2px -58px #aaa,
+                -145px -88px 4px -57px black;
+
+$camera-lens-small-mobile: -145.5px -90px 2.5px -77.5px #aaa,
+                -145px -90px 2px -73px #888,
+                -145px -91px 1px -63px #ccc,
+                -145px -90px 2px -58px #aaa,
+                -145px -88px 4px -57px black;
+
+$camera-lens-small-sm: -115.5px -78px 4px -62.5px #aaa,
+                -115px -78px 2px -57px #888,
+                -115px -78px 1px -52px #ccc,
+                -115px -78px 2px -46px #aaa,
+                -115px -76px 4px -45px black;
+
+$camera-lens-small-xs: -115.5px -78px 4px -62.5px #aaa,
+                -115px -78px 2px -57px #888,
+                -115px -78px 1px -52px #ccc,
+                -115px -78px 2px -46px #aaa,
+                -115px -76px 4px -45px black;
+
+$camera-eye-spot: 20px -165px 3px -83px #eee,
+                14px -155px 3px -83px #666,
+                37px -155px 2.5px -80.5px #444,
+                37px -158px 2px -78.5px #777;
+
+$camera-eye-spot-mobile: 11px -153px 3px -80px #eee,
+                6px -142px 3px -80px #666,
+                25px -143px 2px -79px #444,
+                25px -145px 2px -77px #777;
+
+$camera-eye-spot-sm: 16px -140px 3px -62.5px #eee,
+                10px -128px 3px -62.5px #666,
+                28px -127px 2px -62px #444,
+                28px -129px 2px -60px #777;
+
+$camera-eye-spot-xs: 20px -138px 3px -62.5px #eee,
+                14px -126px 3px -62.5px #666,
+                35px -128px 2px -62px #444,
+                35px -130px 2px -60px #777;
+
+$camera-lens-tl: -72px -156px 3px -78.5px #444,
+                -70px -158px 1px -69px #333,
+                -70px -157px 0.5px -66.5px #ccc,
+                -70px -156px 1px -62px #999;
+
+$camera-lens-tl-sm: -52px -136px 3px -61.5px #444,
+                -50px -138px 1px -54px #333,
+                -50px -137px 0.5px -50.5px #ccc,
+                -50px -136px 1px -47px #999;
+
+$camera-lens-tl-xs: -40px -136px 3px -61.5px #444,
+                -38px -138px 1px -54px #333,
+                -38px -137px 0.5px -50.5px #ccc,
+                -38px -136px 1px -47px #999;
+
+$style-spheres: -120px -124.5px 4px -83px #eee,
+                -122px -122.5px 1.5px -79.5px #444,
+                
+                -200px -124.5px 4px -83px #eee,
+                -202px -122.5px 1.5px -79.5px #444,
+      
+                107px -124.5px 4px -83px #eee,
+                105px -122.5px 1.5px -79.5px #444;
+
+$style-spheres-med: -120px -124.5px 4px -80px #eee,
+                -122px -122.5px 1.5px -77.5px #444,
+                
+                -200px -124.5px 4px -80.5px #eee,
+                -202px -122.5px 1.5px -77.5px #444,
+      
+                99px -124.5px 4px -80px #eee,
+                97px -122.5px 1.5px -77.5px #444;
+
+$style-spheres-mobile: -160px -108.5px 4px -64px #eee,
+                -162px -106.5px 1.5px -61px #444,
+                
+                -105px -108.5px 4px -64px #eee,
+                -107px -106.5px 1.5px -61px #444,
+      
+                70px -108.5px 4px -64px #eee,
+                72px -106.5px 1.5px -61px #444;
+
+*, *:after, *:before  {
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* MAIN DIV STYLE */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background: #F8C471;
+  // background: #F1AC3B;
+  background: #FAC568;
+  // background: #73C6B6;
+  div {
+    background: #333;
+    width: 400px;
+    height: 280px;
+    border-radius: 5px;
+    background-image: $side-shadows, $tb-stripes;
+    -webkit-box-shadow: $camera-bottom-shadow;
+    -moz-box-shadow: $camera-bottom-shadow;
+    box-shadow: $camera-bottom-shadow;
+  }
+  /* Psuedo elements paired with multiple box shadows */
+  div:before {
+    background: #333;
+    -webkit-box-shadow: $eye-spot, 
+                $camera-block, 
+                $snapshot,
+                $left-focus,
+                $left-clarify,
+                $right-top-btn,
+                $right-top-floor; 
+    -moz-box-shadow: $eye-spot, 
+                $camera-block, 
+                $snapshot,
+                $left-focus,
+                $left-clarify,
+                $right-top-btn,
+                $right-top-floor; 
+    box-shadow: $eye-spot, 
+                $camera-block, 
+                $snapshot,
+                $left-focus,
+                $left-clarify,
+                $right-top-btn,
+                $right-top-floor;       
+    }
+  div:after {
+    position: absolute;
+    top: 200px;
+    left: 215px;
+    content: "";
+    width: 175px;
+    height: 175px;
+    background: linear-gradient(45deg, #ccc 40%, #ddd 100%);
+    border-radius: 50%;
+    -webkit-box-shadow: $camera-lens,
+                $camera-lens-small,
+                $camera-eye-spot,
+                $camera-lens-tl,
+                $style-spheres;
+    -moz-box-shadow: $camera-lens,
+                $camera-lens-small,
+                $camera-eye-spot,
+                $camera-lens-tl,
+                $style-spheres;
+    box-shadow: $camera-lens,
+                $camera-lens-small,
+                $camera-eye-spot,
+                $camera-lens-tl,
+                $style-spheres;
+  }
+}
+
+/* media queries */ 
+@media screen and (max-width: 549px) {
+  body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    background: #333;
+    position: absolute;
+    width: 424px;
+    height: 270px;
+    border-radius: 5px;
+    background-image: $side-shadows-med, $tb-stripes-med;
+    -webkit-box-shadow: $camera-bottom-shadow;
+    -moz-box-shadow: $camera-bottom-shadow;
+    box-shadow: $camera-bottom-shadow;
+  }
+  /* Psuedo elements paired with multiple box shadows */
+  div:before {
+    background: #333;
+    content: "";
+    -webkit-box-shadow: $eye-spot-mobile, 
+                $camera-block-mobile, 
+                $snapshot-med,
+                $left-focus-sm,
+                $left-clarify-sm,
+                $right-top-btn-mobile,
+                $right-top-floor-mobile;
+    -moz-box-shadow: $eye-spot-mobile, 
+                $camera-block-mobile, 
+                $snapshot-med,
+                $left-focus-sm,
+                $left-clarify-sm,
+                $right-top-btn-mobile,
+                $right-top-floor-mobile;
+    box-shadow: $eye-spot-mobile, 
+                $camera-block-mobile, 
+                $snapshot-med,
+                $left-focus-sm,
+                $left-clarify-sm,
+                $right-top-btn-mobile,
+                $right-top-floor-mobile;       
+    }
+    div:after {
+      position: absolute;
+      top: 47px;
+      left: 160px;
+      content: "";
+      width: 170px;
+      height: 170px;
+      background: linear-gradient(45deg, #ccc 40%, #ddd 100%);
+      border-radius: 50%;
+      -webkit-box-shadow: $camera-lens,
+                $camera-lens-small-mobile,
+                $camera-eye-spot-mobile,
+                $camera-lens-tl,
+                $style-spheres-med;
+      -moz-box-shadow: $camera-lens,
+                $camera-lens-small-mobile,
+                $camera-eye-spot-mobile,
+                $camera-lens-tl,
+                $style-spheres-med;
+      box-shadow: $camera-lens,
+                $camera-lens-small-mobile,
+                $camera-eye-spot-mobile,
+                $camera-lens-tl,
+                $style-spheres-med;
+    }
+  } 
+}
+
+/* media queries */ 
+@media screen and (min-width: 550px) {
+  body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    background: #333;
+    position: absolute;
+    width: 500px;
+    height: 280px;
+    border-radius: 5px;
+    background-image: $side-shadows, $tb-stripes;
+    -webkit-box-shadow: $camera-bottom-shadow;
+    -moz-box-shadow: $camera-bottom-shadow;
+    box-shadow: $camera-bottom-shadow;
+  }
+  div:before {
+    content: "";
+    position: relative;
+    display: flex;
+    width: 10px;
+    background: #333;
+    -webkit-box-shadow: $eye-spot, 
+                $camera-block, 
+                $snapshot,
+                $left-focus,
+                $left-clarify,
+                $right-top-btn,
+                $right-top-floor;
+    -moz-box-shadow: $eye-spot, 
+                $camera-block, 
+                $snapshot,
+                $left-focus,
+                $left-clarify,
+                $right-top-btn,
+                $right-top-floor;
+    box-shadow: $eye-spot, 
+                $camera-block, 
+                $snapshot,
+                $left-focus,
+                $left-clarify,
+                $right-top-btn,
+                $right-top-floor;       
+    }
+    div:after {
+      position: absolute;
+      top: 45px;
+      left: 205px;
+      content: "";
+      width: 175px;
+      height: 175px;
+      background: linear-gradient(45deg, #ccc 40%, #ddd 100%);
+      border-radius: 50%;
+      
+    }
+  } 
+}
+
+@media screen and (max-width: 450px) {
+  body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    background: #333;
+    position: absolute;
+    width: 365px;
+    height: 250px;
+    border-radius: 5px;
+    background-image: $side-shadows-sm, $tb-stripes-sm;
+    -webkit-box-shadow: $camera-bottom-shadow;
+    -moz-box-shadow: $camera-bottom-shadow;
+    box-shadow: $camera-bottom-shadow;
+  }
+  /* Psuedo elements paired with multiple box shadows */
+  div:before {
+    content: "";
+    background: #333;
+    position: relative;
+    display: flex;
+    width: 5px;
+    -webkit-box-shadow: $eye-spot-sm, 
+                $camera-block-mobile-s, 
+                $snapshot-sm,
+                $left-focus-sm,
+                $left-clarify-sm,
+                $right-top-btn-sm,
+                $right-top-floor-sm;
+    -moz-box-shadow: $eye-spot-sm, 
+                $camera-block-mobile-s, 
+                $snapshot-sm,
+                $left-focus-sm,
+                $left-clarify-sm,
+                $right-top-btn-sm,
+                $right-top-floor-sm;
+    box-shadow:  
+                $eye-spot-sm,
+                $camera-block-mobile-s,
+                $snapshot-sm,
+                $left-focus-sm,
+                $left-clarify-sm,
+                $right-top-btn-sm,
+                $right-top-floor-sm;       
+    }
+    div:after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 140px;
+      width: 135px;
+      height: 135px;
+      background: linear-gradient(45deg, #ccc 40%, #ddd 100%);
+      border-radius: 50%;
+      -webkit-box-shadow: $camera-lens,
+                $camera-lens-small-sm,
+                $camera-eye-spot-sm,
+                $camera-lens-tl-sm,
+                $style-spheres-mobile;
+      -moz-box-shadow: $camera-lens,
+                $camera-lens-small-sm,
+                $camera-eye-spot-sm,
+                $camera-lens-tl-sm,
+                $style-spheres-mobile;
+      box-shadow: $camera-lens,
+                $camera-lens-small-sm,
+                $camera-eye-spot-sm,
+                $camera-lens-tl-sm,
+                $style-spheres-mobile;
+    }
+  } 
+}
+
+/* last one for smalll device screens */
+@media screen and (max-width: 375px) {
+  body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    background: #333;
+    position: absolute;
+    width: 305px;
+    height: 240px;
+    border-radius: 5px;
+    background-image: $side-shadows-sm, $tb-stripes-sm;
+    -webkit-box-shadow: $camera-bottom-shadow;
+    -moz-box-shadow: $camera-bottom-shadow;
+    box-shadow: $camera-bottom-shadow;
+  }
+  /* Psuedo elements paired with multiple box shadows */
+  div:before {
+    content: "";
+    background: #333;
+    -webkit-box-shadow: $eye-spot-xs,
+                $camera-block-mobile-xs,
+                $snapshot-xs,
+                $left-focus-xsm,
+                $left-clarify-xsm,
+                $right-top-btn-xsm,
+                $right-top-floor-xsm; 
+    -moz-box-shadow: $eye-spot-xs,
+                $camera-block-mobile-xs,
+                $snapshot-xs,
+                $left-focus-xsm,
+                $left-clarify-xsm,
+                $right-top-btn-xsm,
+                $right-top-floor-xsm; 
+    box-shadow: $eye-spot-xs,
+                $camera-block-mobile-xs,
+                $snapshot-xs,
+                $left-focus-xsm,
+                $left-clarify-xsm,
+                $right-top-btn-xsm,
+                $right-top-floor-xsm;       
+    }
+    div:after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      left: 105px;
+      width: 135px;
+      height: 135px;
+      background: linear-gradient(45deg, #ccc 40%, #ddd 100%);
+      border-radius: 50%;
+      -webkit-box-shadow: $camera-lens,
+                $camera-lens-small-xs,
+                $camera-eye-spot-xs,
+                $camera-lens-tl-xs,
+                $style-spheres-mobile;
+      -moz-box-shadow: $camera-lens,
+                $camera-lens-small-xs,
+                $camera-eye-spot-xs,
+                $camera-lens-tl-xs,
+                $style-spheres-mobile;
+      box-shadow: $camera-lens,
+                $camera-lens-small-xs,
+                $camera-eye-spot-xs,
+                $camera-lens-tl-xs,
+                $style-spheres-mobile;
+    }
+  } 
+}
